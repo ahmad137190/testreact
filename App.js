@@ -7,6 +7,9 @@
 import React, { Component } from "react";
 import Login from "./src/component/Login";
 import Articels from "./src/component/Articels";
+import AppTest from "./src/AppTest";
+import { I18nManager } from 'react-native';
+I18nManager.forceRTL(true);
 import {
   Platform,
   StyleSheet,
@@ -25,8 +28,8 @@ const instructions = Platform.select({
     "Shake or press menu button for dev menu"
 });
 
-type Props = {};
-export default class App extends Component<Props> {
+
+export default class App extends Component{
   componentWillMount() {
     this.setState({
       articles: [
@@ -140,12 +143,12 @@ export default class App extends Component<Props> {
       //
       // />
 
-      <Articels articles={this.state.articles} />
+      // <Articels articles={this.state.articles} />
 
 
-      // <App
-      //
-      // />
+      <AppTest
+
+      />
     );
   }
 }

@@ -5,7 +5,7 @@ import { Text } from "react-native";
 
 export default class Home extends Component {
     static navigationOptions = {
-        headerTitle : <Text style={OriginalStyle.headerTitleStyle}>مجله آموزشی راکت</Text>
+        headerTitle : <Text style={OriginalStyle.headerTitleStyle}>هونام مهارنتت</Text>
     }
 
     componentWillMount() {

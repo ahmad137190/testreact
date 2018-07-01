@@ -11,6 +11,7 @@ export default class Article extends Component {
     })
 
     render() {
+    console.log(this.props);
         const { title , image , body } = this.props.navigation.state.params.article;
         return (
             <ScrollView>
@@ -37,7 +38,7 @@ const styles = StyleSheet.create({
     // },
     image : {
         width : '100%',
-        height: 120
+        height: 200
     },
     title : {
         fontSize : 16,
