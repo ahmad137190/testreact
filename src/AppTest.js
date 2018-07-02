@@ -16,7 +16,11 @@ import Profile from './pages/Profile';
 import Search from './pages/Search';
 import style from './assets/style';
 
+import EStyleSheet from 'react-native-extended-stylesheet';
 
+EStyleSheet.build({ // always call EStyleSheet.build() even if you don't use global variables!
+  
+});
 // import { Tab, TabLayout } from 'react-native-android-tablayout';
 // export default class AppTest extends Component{
 
